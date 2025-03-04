@@ -14,8 +14,11 @@ import sys
 # separator=Separator(phone=' ', word=' _ ', syllable='|'),
 separator = Separator(word=" _ ", syllable="|", phone=" ")
 
+#phonemizer_zh = EspeakBackend(
+#    "cmn", preserve_punctuation=False, with_stress=False, language_switch="remove-flags"
+#)
 phonemizer_zh = EspeakBackend(
-    "cmn", preserve_punctuation=False, with_stress=False, language_switch="remove-flags"
+    "ja", preserve_punctuation=False, with_stress=False, language_switch="remove-flags"
 )
 # phonemizer_zh.separator = separator
 
